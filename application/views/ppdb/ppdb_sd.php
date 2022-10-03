@@ -485,6 +485,9 @@
 	
 		
 	</div>
+	<div class="mt-4 zoomin" align="center">
+		<img src="<?php echo base_url() . 'assets/frontend/default/img/ppdb2022.jpg'; ?>" alt="logo">
+	</div>
 		<!--<h5 class="card-title text-warning">SAMBUTAN KEPALA SEKOLAH SD</h5>
 						
 							<?= get_settings('sambutan') ?>-->

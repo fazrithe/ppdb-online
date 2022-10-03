@@ -143,6 +143,20 @@
 				color: blue;
 			}
 		}
+
+		.zoomin img {
+      height: 50%;
+      width: 50%;
+      -webkit-transition: all 2s ease;
+      -moz-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+      transition: all 2s ease;
+	  align-content: center;
+    }
+    .zoomin img:hover {
+      width: 100%;
+      height: 100%;
+    }
 	</style>
 </head>
 
