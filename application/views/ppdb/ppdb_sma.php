@@ -11,7 +11,7 @@
 				<h3>Tahun Ajaran <?= get_settings('tahun_ajar') ?></b></h3></br>
 			</div>
 			<div class="col-md-3">
-				<button class="btn btn-primary btn-block btn-lg shadow" data-toggle="modal" data-target="#btn">Login / Register</button>
+				<button class="btn btn-secondary btn-block btn-lg shadow" data-toggle="modal" data-target="#btn">Login / Register</button>
 			</div>
 		</div>
 	</div>
