@@ -13,3 +13,12 @@
   100% { transform: rotate(360deg); }
 }
 
+.bg-signup {
+  background-image: url("../images/backgrounds/bg.jpeg");
+  background-color: #cccccc;
+ }
+
+ .bg-form {
+    background-color: #cccccc;
+ }
+
