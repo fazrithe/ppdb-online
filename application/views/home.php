@@ -139,6 +139,7 @@
 		}
 
 		.btn {
+			width: 90px;
 			border: none;
 			font-family: inherit;
 			font-size: inherit;
@@ -205,33 +206,33 @@
 			<div class="row">
 				<div class="col-xs-6 col-sm-1-5 col-lg-2-5">
 					<a href="<?= site_url('ppdb/tk') ?>"><img src="<?= site_url('uploads/system/TK.png') ?>" alt="" class="rounded mx-auto d-block img-fluid w-75"></a>
-					<div class="text-center p-4">
-						<h6 style="background-color:#E67817;" class="p-1 rounded text-white">TK</h6>
-					</div>
+					<div class="category-content text-center">
+                        <a href="<?= site_url('ppdb/tk') ?>" class="btn btn-warning">TK</a>
+                    </div>
 				</div>
 				<div class="col-xs-6 col-sm-1-5 col-lg-2-5">
 					<a href="<?= site_url('ppdb/sd') ?>"><img src="<?= site_url('uploads/system/SD.png') ?>" alt="" class="rounded mx-auto d-block img-fluid w-75"></a>
-					<div class="text-center p-4">
-						<h6 style="background-color:#f60303;" class=" p-1 rounded text-white">SD</h6>
-					</div>
+					<div class="category-content text-center">
+						<a href="<?= site_url('ppdb/sd') ?>" class="btn btn-danger">SD</a>
+                    </div>
 				</div>
 				<div class="col-xs-6 col-sm-1-5 col-lg-1-5">
 					<a href="<?= site_url('ppdb/smp') ?>"><img src="<?= site_url('uploads/system/SMP.png') ?>" alt="" class="rounded mx-auto d-block img-fluid w-75"></a>
-					<div class="text-center p-4">
-						<h6 style="background-color:#1f3370;" class=" p-1 rounded text-white">SMP</h6>
-					</div>
+					<div class="category-content text-center">
+						<a href="<?= site_url('ppdb/smp') ?>" class="btn btn-primary">SMP</a>
+                    </div>
 				</div>
 				<div class="col-xs-6 col-sm-1-5 col-lg-3-5">
 					<a href="<?= site_url('ppdb/sma') ?>"><img src="<?= site_url('uploads/system/SMA.png') ?>" alt="" class="rounded mx-auto d-block img-fluid w-75"></a>
-					<div class="text-center p-4">
-						<h6 style="background-color:#557c99;" class=" p-1 rounded text-white">SMA</h6>
-					</div>
+					<div class="category-content text-center">
+						<a href="<?= site_url('ppdb/sma') ?>" class="btn btn-secondary">SMA</a>
+                    </div>
 				</div>
 				<div class="col-xs-6 col-sm-1-5 col-lg-1-5">
 					<a href="<?= site_url('ppdb/smk') ?>"><img src="<?= site_url('uploads/system/SMK.png') ?>" alt="" class="rounded mx-auto d-block img-fluid w-75"></a>
-					<div class="text-center p-4">
-						<h6 style="background-color:#000000;" class=" p-1 rounded text-white">SMK</h6>
-					</div>
+					<div class="category-content text-center">
+						<a href="<?= site_url('ppdb/smk') ?>" class="btn btn-dark">SMK</a>
+                    </div>
 				</div>
 			</div>
 		</div>
