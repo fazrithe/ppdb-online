@@ -32,7 +32,7 @@
 	<title>Home</title>
 	<style>
 		.bg {
-			background: url(<?= site_url('uploads/system/bg.png') ?> );
+			background: url(<?= site_url('uploads/system/bg2.png') ?> );
 			background-position: center top;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -159,24 +159,24 @@
 			transition: all 1s;
 		}
 		.btn {
-			border: 3px solid red;
-			color: red;
+			border: 3px solid #DB2929;
+			color: #DB2929;
 		}
 		.btn-tk {
-			border: 3px solid yellow;
-			color: yellow;
+			border: 3px solid #E67817;
+			color: #E67817;
 		}
 		.btn-smp {
 			border: 3px solid blue;
-			color: blue;
+			color: #292476;
 		}
 		.btn-sma {
-			border: 3px solid grey;
-			color: grey;
+			border: 3px solid #87888C;
+			color: #87888C;
 		}
 		.btn-smk {
-			border: 3px solid black;
-			color: black;
+			border: 3px solid #070616;
+			color: #070616;
 		}
 		.btn:hover {
 			color: #fff;
@@ -211,7 +211,7 @@
 	<div class="container" style="margin-top:-50px">
 		<div class="row text-center">
 			<div class="col-md-12 col-sm-12 p-3">
-			    
+			    </br>
 				<h1><font color="blue" face="arial black">Selamat Datang di PPDB Online</font></h1>
 				<b><h2><font face="arial black"><h2>SEKOLAH BUDI AGUNG - JAKARTA</font></h2></b>
 				<b><h4><p><font color="red" face="comic sans ms">Tahun Ajaran 2023 / 2024</p></b></h4>
@@ -230,7 +230,7 @@
 				<div class="col-xs-6 col-sm-1-5 col-lg-2-5">
 					<a href="<?= site_url('ppdb/sd') ?>"><img src="<?= site_url('uploads/system/SD.png') ?>" alt="" class="rounded mx-auto d-block img-fluid w-75"></a>
 					<div class="category-content text-center">
-						<a href="<?= site_url('ppdb/sd') ?>" class="btn btn-danger">SD</a>
+						<a href="<?= site_url('ppdb/sd') ?>" class="btn btn-danger" style="">SD</a>
                     </div>
 				</div>
 				<div class="col-xs-6 col-sm-1-5 col-lg-1-5">

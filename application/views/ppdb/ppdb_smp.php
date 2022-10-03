@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<img src="<?= site_url('assets/img/smp.png') ?>" alt="" class="img-fluid">
+				<img src="<?= site_url('assets/img/BannerSMK.png') ?>" alt="" class="img-fluid">
 			</div>
 		</div>
 		<div class="row justify-content-center">
