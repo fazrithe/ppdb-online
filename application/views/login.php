@@ -54,7 +54,7 @@
 					</thead>
 					<tbody>
 						<?php $no = 1;
-						foreach ($siswa as $v) : ?>
+						foreach ($siswa as $v){ ?>
 							<tr>
 								<td><?= $no ?></td>
 								<td>
@@ -75,7 +75,7 @@
 								<?php
 								$no++
 								?>
-							<?php endforeach ?>
+							<?php } ?>
 							</tr>
 					</tbody>
 				</table>
