@@ -83,7 +83,7 @@
                                     <img src="<?php echo base_url() . 'assets/frontend/new/assets/images/logo/TK.png'; ?>" alt="category">
                                 </div>
                                 <div class="category-content">
-                                    <span>TK</span>
+                                    <a href="<?= site_url('ppdb/tk') ?>" class="btn btn-warning">TK</a>
                                 </div>
 								</a>
                             </div>
@@ -97,7 +97,7 @@
                                     <img src="<?php echo base_url() . 'assets/frontend/new/assets/images/logo/SD.png'; ?>" alt="category">
                                 </div>
                                 <div class="category-content">
-                                    <span>SD</span>
+									<a href="<?= site_url('ppdb/sd') ?>" class="btn btn-danger">SD</a>
                                 </div>
 							</a>
                             </div>
@@ -111,7 +111,7 @@
                                     <img src="<?php echo base_url() . 'assets/frontend/new/assets/images/logo/SMP.png'; ?>" alt="category">
                                 </div>
                                 <div class="category-content">
-                                    <span>SMP</span>
+									<a href="<?= site_url('ppdb/smp') ?>" class="btn btn-primary">SMP</a>
                                 </div>
 							</a>
                             </div>
@@ -125,7 +125,7 @@
                                     <img src="<?php echo base_url() . 'assets/frontend/new/assets/images/logo/SMA.png'; ?>" alt="category">
                                 </div>
                                 <div class="category-content">
-                                    <span>SMA</span>
+									<a href="<?= site_url('ppdb/sma') ?>" class="btn btn-secondary">SMA</a>
                                 </div>
 							</a>
 						</div>
@@ -139,7 +139,7 @@
                                     <img src="<?php echo base_url() . 'assets/frontend/new/assets/images/logo/SMK.png'; ?>" alt="category">
                                 </div>
                                 <div class="category-content">
-                                    <span>SMK</span>
+									<a href="<?= site_url('ppdb/smk') ?>" class="btn btn-dark">SMK</a>
                                 </div>
 							</a>
                             </div>
