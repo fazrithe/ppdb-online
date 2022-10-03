@@ -162,6 +162,22 @@
 			border: 3px solid red;
 			color: red;
 		}
+		.btn-tk {
+			border: 3px solid yellow;
+			color: yellow;
+		}
+		.btn-smp {
+			border: 3px solid blue;
+			color: blue;
+		}
+		.btn-sma {
+			border: 3px solid grey;
+			color: grey;
+		}
+		.btn-smk {
+			border: 3px solid black;
+			color: black;
+		}
 		.btn:hover {
 			color: #fff;
 		}
@@ -208,7 +224,7 @@
 				<div class="col-xs-6 col-sm-1-5 col-lg-2-5">
 					<a href="<?= site_url('ppdb/tk') ?>"><img src="<?= site_url('uploads/system/TK.png') ?>" alt="" class="rounded mx-auto d-block img-fluid w-75"></a>
 					<div class="category-content text-center">
-                        <a href="<?= site_url('ppdb/tk') ?>" class="btn btn-warning">TK</a>
+                        <a href="<?= site_url('ppdb/tk') ?>" class="btn btn-tk btn-warning">TK</a>
                     </div>
 				</div>
 				<div class="col-xs-6 col-sm-1-5 col-lg-2-5">
@@ -220,19 +236,19 @@
 				<div class="col-xs-6 col-sm-1-5 col-lg-1-5">
 					<a href="<?= site_url('ppdb/smp') ?>"><img src="<?= site_url('uploads/system/SMP.png') ?>" alt="" class="rounded mx-auto d-block img-fluid w-75"></a>
 					<div class="category-content text-center">
-						<a href="<?= site_url('ppdb/smp') ?>" class="btn btn-primary">SMP</a>
+						<a href="<?= site_url('ppdb/smp') ?>" class="btn btn-smp btn-primary">SMP</a>
                     </div>
 				</div>
 				<div class="col-xs-6 col-sm-1-5 col-lg-3-5">
 					<a href="<?= site_url('ppdb/sma') ?>"><img src="<?= site_url('uploads/system/SMA.png') ?>" alt="" class="rounded mx-auto d-block img-fluid w-75"></a>
 					<div class="category-content text-center">
-						<a href="<?= site_url('ppdb/sma') ?>" class="btn btn-secondary">SMA</a>
+						<a href="<?= site_url('ppdb/sma') ?>" class="btn btn-sma btn-secondary">SMA</a>
                     </div>
 				</div>
 				<div class="col-xs-6 col-sm-1-5 col-lg-1-5">
 					<a href="<?= site_url('ppdb/smk') ?>"><img src="<?= site_url('uploads/system/SMK.png') ?>" alt="" class="rounded mx-auto d-block img-fluid w-75"></a>
 					<div class="category-content text-center">
-						<a href="<?= site_url('ppdb/smk') ?>" class="btn btn-dark">SMK</a>
+						<a href="<?= site_url('ppdb/smk') ?>" class="btn btn-smk btn-dark">SMK</a>
                     </div>
 				</div>
 			</div>
