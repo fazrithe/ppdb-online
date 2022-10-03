@@ -30,10 +30,10 @@
   <div class="container">
     <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-md-8 col-md-offset-2">
       <div id="userform">
-        <ul class="nav nav-tabs nav-justified" style="" role="tablist">
-          <li class="active"><a href="#signup"  role="tab" data-toggle="tab">PPDB <?= strtoupper($jenjang) ?></a></li>
-        </ul>
-        <div class="tab-content">
+		<div align="left" style="padding-left:10px; padding-top:10px;">
+          <img src="<?= site_url('assets/images/logo/SC-2209239550.png') ?>" alt="" width="15%" class="rounded mx-auto d-block img-fluid w-75"><a href="#signup"  role="tab" data-toggle="tab"><font size="5">PPDB <?= strtoupper($jenjang) ?></font></a>
+		</div>
+		  <div class="tab-content">
           <div class="tab-pane fade active in" id="signup">
 		  <p class="auth-description">Login jika sudah punya akun. <a href="<?= site_url('login') ?>">Sign In</a></p>
             <form id="signup">
@@ -61,11 +61,11 @@
               </div>
 			  <div class="form-group">
 			  <label>Nama Lengkap<span class="req"></span> </label>
-			  <input type="email" class="form-control" id="nama" aria-describedby="nama" onBlur="javascript:{this.value = this.value.toUpperCase();}" placeholder="">
+			  <input type="email" class="form-control" id="nama" aria-describedby="nama" onBlur="javascript:{this.value = this.value.toUpperCase();}" placeholder="Nama Lengkap">
               </div>
               <div class="form-group">
                 <label>Tempat Lahir<span class="req">*</span> </label>
-                <input type="text" class="form-control m-b-md" id="tempat_lahir" aria-describedby="tempat_lahir" onBlur="javascript:{this.value = this.value.toUpperCase();}" placeholder="">
+                <input type="text" class="form-control m-b-md" id="tempat_lahir" aria-describedby="tempat_lahir" onBlur="javascript:{this.value = this.value.toUpperCase();}" placeholder="Tempat Lahir">
                 <p class="help-block text-danger"></p>
               </div>
 			  <div class="form-group">
@@ -105,16 +105,22 @@
                   </div>
                 </div>
               </div>
+			  <div class="row">
+                <div class="col-xs-12 col-sm-6">
 			  <div class="form-group">
-                <label> Email<span class="req">*</span> </label>
-                <input type="email" class="form-control m-b-md" id="email" aria-describedby="tanggal_lahir" placeholder="">
+                <p style="color:red"> Gunakan Email Aktif<span class="req">*</span> </p>
+                <input type="email" class="form-control m-b-md" id="email" aria-describedby="tanggal_lahir" placeholder="Email">
                 <p class="help-block text-danger"></p>
               </div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
               <div class="form-group">
-                <label> Gunakan awalan 6281xxxxxxx<span class="req">*</span> </label>
-                <input type="text" class="form-control m-b-md" id="phone" aria-describedby="tanggal_lahir" placeholder="">
+                <p style="color:red"> Gunakan awalan 6281xxxxxxx<span class="req">*</span> </p>
+                <input type="text" class="form-control m-b-md" id="phone" aria-describedby="tanggal_lahir" placeholder="Gunakan awalan 6281xxxxxxx">
                 <p class="help-block text-danger"></p>
               </div>
+				</div>
+			  </div>
               <div class="mrgn-30-top">
 			  <div class="auth-submit">
 				<div id="loading" class="text-center" style="display: none;">
