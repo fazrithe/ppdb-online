@@ -6414,11 +6414,9 @@ span.flatpickr-weekday {
 
 
 .app-auth-sign-up .app-auth-background {
-    background: url('../images/backgrounds/bg.jpeg') no-repeat;
-    background-size: 100%;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: auto;
+    background: url('../images/backgrounds/sign-up.svg') no-repeat;
+    background-size: 60%;
+    background-position: center;
 }
 
 .app-auth-lock-screen .app-auth-background {
