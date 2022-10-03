@@ -30,7 +30,7 @@
   <div class="container">
     <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-md-8 col-md-offset-2">
       <div id="userform">
-        <ul class="nav nav-tabs nav-justified" role="tablist">
+        <ul class="nav nav-tabs nav-justified" style="" role="tablist">
           <li class="active"><a href="#signup"  role="tab" data-toggle="tab">PPDB <?= strtoupper($jenjang) ?></a></li>
         </ul>
         <div class="tab-content">

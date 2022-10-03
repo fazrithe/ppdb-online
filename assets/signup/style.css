@@ -92,7 +92,6 @@ div#form {
 }
 #userform .nav-tabs.nav-justified > .active > a, #userform .nav-tabs.nav-justified > .active > a:hover, #userform .nav-tabs.nav-justified > .active > a:focus {
 	border: 0;
-	background: #F7CA18;
 	color: white;
 	border-radius: 0;
 }
