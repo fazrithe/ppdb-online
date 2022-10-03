@@ -205,11 +205,11 @@
 
 						},
 						error: function(data) {
-							Swal.fire(
-								'Sorry',
-								data,
-								'warning'
-							)
+							// Swal.fire(
+							// 	'Sorry',
+							// 	data,
+							// 	'warning'
+							// )
 						}
 					});
 
