@@ -139,7 +139,7 @@
 		}
 
 		.btn {
-			width: 120px;
+			width: 110px;
 			height: 40px;
 			border: none;
 			font-family: inherit;
