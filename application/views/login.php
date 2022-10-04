@@ -82,7 +82,7 @@
 					</div>
 					<div class="row mb-4">
 						<div class="col-3">
-						<button type="submit" class="btn btn-primary">Sign in</button>
+						<button type="submit" class="btn btn-primary">Filter</button>
 						</div>
 					</div>
 					</form>
