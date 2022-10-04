@@ -21,7 +21,7 @@ class Auth extends CI_Controller
 		$credential = array('email' => $email, 'password' => sha1($password));
 		// Checking login credential for admin
 		$query = $this->db->get_where('users', $credential);
-
+		
 		if ($query->num_rows() > 0) {
 			$row = $query->row();
 			$this->user_model->set_login_userdata($row->id);

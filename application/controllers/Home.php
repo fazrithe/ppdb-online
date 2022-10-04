@@ -128,9 +128,50 @@ class Home extends CI_Controller
 		} elseif ($this->session->userdata('siswa_login') == true) {
 			redirect('siswa');
 		}
-		$data = [
-			'siswa' => $this->admin_model->siswa_lulus()
-		];
+		$jenjang = $this->input->post('jenjang');
+		$kelas = $this->input->post('kelas');
+		if($jenjang==0 && $kelas==0){
+			$data = [
+				
+				'siswa' => $this->admin_model->siswa_lulus(),
+				'jenjang' => $this->input->get('jenjang'),
+				'id_jenjang' => $this->input->get('id_jenjang'),
+				'jurusan' => $this->db->get('jenjang')->result(),
+				'kelas' => $this->db->get_where('kelas')->result(),
+				'jenjang_id' => $jenjang,
+				'kelas_id' => $kelas,
+			];
+		}elseif($jenjang==0 || $kelas!=0){
+			$data = [
+				'siswa' => $this->admin_model->siswa_lulus_where_kelas($kelas),
+				'jenjang' => $this->input->get('jenjang'),
+				'id_jenjang' => $this->input->get('id_jenjang'),
+				'jurusan' => $this->db->get('jenjang')->result(),
+				'kelas' => $this->db->get_where('kelas')->result(),
+				'jenjang_id' => $jenjang,
+				'kelas_id' => $kelas,
+			];
+		}elseif($jenjang!=0 || $kelas==0){
+			$data = [
+				'siswa' => $this->admin_model->siswa_lulus_where_jenjang($jenjang),
+				'jenjang' => $this->input->get('jenjang'),
+				'id_jenjang' => $this->input->get('id_jenjang'),
+				'jurusan' => $this->db->get('jenjang')->result(),
+				'kelas' => $this->db->get_where('kelas')->result(),
+				'jenjang_id' => $jenjang,
+				'kelas_id' => $kelas,
+			];
+		}else{
+			$data = [
+				
+				'siswa' => $this->admin_model->siswa_lulus_where($jenjang, $kelas),
+				'jenjang' => $this->input->get('jenjang'),
+				'id_jenjang' => $this->input->get('id_jenjang'),
+				'jurusan' => $this->db->get('jenjang')->result(),
+				'kelas' => $this->db->get_where('kelas')->result()
+			];
+		}
+		
 		$this->load->view('login', $data);
 	}
 }

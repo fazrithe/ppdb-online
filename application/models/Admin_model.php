@@ -70,6 +70,42 @@ class Admin_model extends CI_Model
 		return $this->db->get()->result();
 	}
 
+	public function siswa_lulus_where($jenjang, $kelas)
+	{
+		$this->db->select('*');
+		$this->db->from('register', 'siswa');
+		$this->db->join('siswa', 'siswa.user_id = register.user_id', 'left');
+		$this->db->join('kelas', 'kelas.id_kelas = siswa.id_kelas', 'left');
+		$this->db->where('.register.status', 1);
+		$this->db->where('.siswa.id_jenjang', $jenjang);
+		$this->db->where('.siswa.id_kelas', $kelas);
+		return $this->db->get()->result();
+	}
+
+	public function siswa_lulus_where_kelas($kelas)
+	{
+		$this->db->select('*');
+		$this->db->from('register', 'siswa');
+		$this->db->join('siswa', 'siswa.user_id = register.user_id', 'left');
+		$this->db->join('kelas', 'kelas.id_kelas = siswa.id_kelas', 'left');
+		$this->db->where('.register.status', 1);
+		// $this->db->or_where('.siswa.id_jenjang', $jenjang);
+		$this->db->where('.siswa.id_kelas', $kelas);
+		return $this->db->get()->result();
+	}
+
+	public function siswa_lulus_where_jenjang($jenjang)
+	{
+		$this->db->select('*');
+		$this->db->from('register', 'siswa');
+		$this->db->join('siswa', 'siswa.user_id = register.user_id', 'left');
+		$this->db->join('kelas', 'kelas.id_kelas = siswa.id_kelas', 'left');
+		$this->db->where('.register.status', 1);
+		$this->db->where('.siswa.id_jenjang', $jenjang);
+		// $this->db->where('.siswa.id_kelas', $kelas);
+		return $this->db->get()->result();
+	}
+
 	public function print_lulus()
 	{
 		$this->db->join('kelas', 'kelas.id_kelas = siswa.id_kelas', 'left');

@@ -40,7 +40,43 @@
 	<div class="col">
 		<div class="card">
 		    <div class="card-body">
-		        
+				<div class="pull-right">
+					<form action="<?= site_url('login') ?>" method="POST">
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<label for="jenjang">Jenjang</label>
+							<select class="form-control m-b-md" name="jenjang" id="jenjang">
+								<option value="0">--Pilih Jenjang--</option>
+								<?php foreach ($jurusan as $v) : ?>
+									<?php if($v->id == $jenjang_id){ ?>
+										<option value="<?= $v->id ?>" selected><?= $v->nama_jenjang ?></option>
+									<?php }else{ ?>
+										<option value="<?= $v->id ?>"><?= $v->nama_jenjang ?></option>
+									<?php }?>
+								<?php endforeach ?>
+							</select>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<label for="kelas">Kelas</label>
+							<select class="form-control m-b-md" name="kelas" id="kelas">
+								<option value="0">--Pilih Kelas--</option>
+								<?php foreach ($kelas as $v) : ?>
+									<?php if($v->id_kelas == $kelas_id){ ?>
+										<option value="<?= $v->id_kelas ?>" selected><?= $v->nama_kelas ?></option>
+									<?php }else{ ?>
+										<option value="<?= $v->id_kelas ?>"><?= $v->nama_kelas ?></option>
+									<?php }?>
+								<?php endforeach ?>
+							</select>
+						</div>
+					</div>
+					<div class="row mb-4">
+						<div class="col-3">
+						<button type="submit" class="btn btn-primary">Sign in</button>
+						</div>
+					</div>
+					</form>
+				</div>
 		        <table id="example" class="display" style="width:100%">
 					<thead>
 						<tr>
