@@ -30,27 +30,17 @@
 
 	<link rel="icon" type="image/png" sizes="32x32" href="<?= site_url('assets/backend/') ?>images/neptune.png" />
 	<link rel="icon" type="image/png" sizes="16x16" href="<?= site_url('assets/backend/') ?>images/neptune.png" />
-	<style>
-	.tb{
-	    padding:80px;
-	}
-	    @media only screen and (max-width: 600px) {
-  .tb {
-    padding: 10px;
-  }
-}
-	</style>
 </head>
 
 <body>
 	<div class="app app-auth-sign-in align-content-stretch d-flex flex-wrap justify-content-end">
-		<div class="app-auth-background tb">
+		<div class="app-auth-background" style="padding:80px;">
 		    <!--START-->
             <div class="row">
 	<div class="col">
 		<div class="card">
 		    <div class="card-body">
-			<div class="pull-right">
+				<div class="pull-right">
 					<form action="<?= site_url('login') ?>" method="POST">
 					<div class="row">
 						<div class="col-md-6 col-sm-6">
@@ -196,6 +186,7 @@
 		$(document).ready(function() {
 			$('#example').DataTable({
 				responsive: true,
+			
 				ordering: false,
 			});
 
