@@ -50,10 +50,10 @@
 	<div class="col">
 		<div class="card">
 		    <div class="card-body">
-			<div class="pull-right">
+			<div class="">
 					<form action="<?= site_url('login') ?>" method="POST">
 					<div class="row">
-						<div class="col-md-6 col-sm-6">
+						<div class="col-md-3 col-sm-3">
 							<label for="jenjang">Jenjang</label>
 							<select class="form-control m-b-md" name="jenjang" id="jenjang">
 								<option value="0">--Pilih Jenjang--</option>
@@ -66,7 +66,7 @@
 								<?php endforeach ?>
 							</select>
 						</div>
-						<div class="col-md-6 col-sm-6">
+						<div class="col-md-3 col-sm-3">
 							<label for="kelas">Kelas</label>
 							<select class="form-control m-b-md" name="kelas" id="kelas">
 								<option value="0">--Pilih Kelas--</option>
